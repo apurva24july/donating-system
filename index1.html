@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles1.css">
+    <title>Donation Tracking System</title>
+</head>
+<body>
+    <header>
+        <h1>Donation Tracking System</h1>
+    </header>
+    <main>
+        <section id="donationForm">
+            <h2>Make a Donation</h2>
+            <form id="donationForm">
+                <label for="donorName">Donor Name:</label>
+                <input type="text" id="donorName" required>
+
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" required>
+
+                <button type="button" onclick="recordDonation()">Submit Donation</button>
+            </form>
+        </section>
+
+        <section id="donationList">
+            <h2>Donation List</h2>
+            <ul id="donationItems"></ul>
+        </section>
+    </main>
+
+    <script src="script1.js"></script>
+</body>
+</html>
